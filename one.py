@@ -200,16 +200,174 @@ new=[]
 
 
 
-try:
-    a=int(input("enter a nummm"))
-    result=100/a
-except ZeroDivisionError:
-    print("error unddd")
-except ValueError:
-    print("only by nummm divide patollu")
-else:
-    print(result)
+# try:
+#     a=int(input("enter a nummm"))
+#     result=100/a
+# except ZeroDivisionError:
+#     print("error unddd")
+# except ValueError:
+#     print("only by nummm divide patollu")
+# else:
+#     print(result)
 
-finally:
-    print("thank youu")
+# finally:
+#     print("thank youu")
     
+
+
+# def decorator(func):
+#     def wrapper():
+#         print("before ......")
+#         func()
+#         print("afterrrrrrr")
+#     return wrapper
+     
+    
+# @decorator
+# def new():
+#     print("hello")
+# new()
+
+
+
+
+
+
+# def decorator(func):
+#     def wrapper():
+#         print("hiiiiiiii")
+#         func()
+#         print("how are uuuuuu")
+#     return wrapper
+# @decorator
+# def new():
+#     print("manhar")
+# new()  
+    
+
+
+# def new():
+#     yield "hiii"
+#     yield "broooo"
+# g=new()
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+from functools import reduce
+
+# listt=[1,2,3,4,5,44,55,3,4,5,100,10,20,30]
+
+# new=reduce(lambda a,b: a+b,listt)
+# print(new)
+
+
+# names = ["Manhar", "Raj", "Anu"]
+# ages = [21, 22, 20]
+
+# out={a:b for a,b in zip(names,ages)}
+# print(out)
+
+
+# def add(a,b):
+#     return a+b
+
+# res=add(5,6)
+# print(res)
+
+
+# class Manhar:
+#     def one(self):
+#         print("hello")
+
+#     def two(self):
+#         print("hiiii")
+
+# a1=Manhar()
+# a2=Manhar()
+# a1.one()
+# a2.two()
+
+
+# class A:
+#     def add(self, *args):
+#         print(sum(args))
+
+# a = A()
+# a.add(10)
+# a.add(10,20)
+# a.add(10,20,30)
+
+# class parent:
+#     def show(self):
+#         print("hello")
+
+# class child(parent):
+#     def display(self):
+#         print("brooooo")
+
+# a=child()
+# a.display()
+# a.show()
+
+
+
+# text = "hello world"
+# vowels = "aeiou"
+
+
+# for i in text:
+#     if i.lower() in vowels:
+#         print(i)
+
+
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+#     def __str__(self):
+#         return self.name
+
+ 
+# s = Student("Manhar")
+# print(s)
+
+
+# class parent():
+#     def show(self):
+#         print("parenttt")
+# class child(parent):
+#     def display():
+#         print("chuildddd")
+
+
+# a=child()
+# a.show()
+
+  
+# def man(func):
+#   def old():
+#     print("hiiiii")
+#     func()
+#     print("hw are uuuu")
+#   return old
+
+# @man
+# def new():
+#     print("broooo")
+
+# new()
+
+
+
+class Animal:
+    def sound(self):
+        print("sound")
+    
+class dog(Animal):
+    def  sound(seif):
+        print("bowwww")
+
+a=dog()
+b=Animal()
+b.sound()
+a.sound()
